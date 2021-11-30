@@ -147,3 +147,5 @@ db.on("connected", () => console.log("MongoDB connected on: ", mongoURI));
 // setTimeout(() => {
 //   db.close();
 // }, 5000);
+
+modole.exports= mongoose;

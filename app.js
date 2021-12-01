@@ -1,7 +1,7 @@
 //dependencies
-const mongoose = require("mongoose");
-const Food = require("./food.js");
-require("dotenv").config();
+// const mongoose = require("mongoose");
+// const Food = require("./food.js");
+// require("dotenv").config();
 
 //seeding
 // const myFirstFood = {
@@ -114,20 +114,20 @@ require("dotenv").config();
 
 
 //global configs
-const mongoURI = process.env.DATABASE_URL;
-const db = mongoose.connection;
+// const mongoURI = process.env.DATABASE_URL;
+// const db = mongoose.connection;
 
-mongoose.connect(
-  mongoURI,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    // useCreateIndex: true,
-  },
-  () => {
-    console.log("connection with Mongo is established!");
-  }
-);
+// mongoose.connect(
+//   mongoURI,
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     // useCreateIndex: true,
+//   },
+//   () => {
+//     console.log("connection with Mongo is established!");
+//   }
+// );
 
 //connect to Mongo
 // mongoose.connect(
@@ -139,7 +139,7 @@ mongoose.connect(
 // Connection Error/Success
 // Define callback functions for various events
 // db.on("error", (err) => console.log(err.message + " is MongoDB not running?"));
-db.on("connected", () => console.log("MongoDB connected on: ", mongoURI));
+// db.on("connected", () => console.log("MongoDB connected on: ", mongoURI));
 // db.on("disconnected", () => console.log("MongoDB disconnected"));
 
 // Automatically close after 5 seconds
@@ -148,4 +148,4 @@ db.on("connected", () => console.log("MongoDB connected on: ", mongoURI));
 //   db.close();
 // }, 5000);
 
-modole.exports= mongoose;
+// module.exports= mongoose;

@@ -1,11 +1,11 @@
-// const mongoose = require('../db/connection');
-const mongoose = require('mongoose'); // require mongoose
-const Schema = mongoose.Schema; // create a shorthand for the mongoose Schema constructor
+const mongoose = require('../db/connection');
+// const mongoose = require('mongoose'); // require mongoose
+// const Schema = mongoose.Schema; // create a shorthand for the mongoose Schema constructor
 
 //create a new schema 
 //this will define the shape of the documents
 
-const foodSchema = new Schema(
+const foodSchema = new mongoose.Schema(
     {
         dishName:String,
         ingredients:[],
@@ -21,7 +21,7 @@ const foodSchema = new Schema(
 // An instance of a model is called a document.
 // Models are responsible for creating and reading documents from the underlying MongoDB Database
 // from here: https://mongoosejs.com/docs/models.html
-const Foods = mongoose.model('Food', foodSchema);
+const recipe = mongoose.model('Food', foodSchema);
 
 //make this exportable to be accessed in `app.js`
-module.exports = Foods;
+module.exports = recipe;

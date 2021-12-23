@@ -26,9 +26,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
 	res.redirect('/recipes');
 });
-// Tweet Routes
-const tweetRoutes = require('./controllers/recipes.js');
-app.use('/recipes', tweetRoutes);
+// recipes Routes
+const recipesRoutes = require('./controllers/recipes.js');
+app.use('/recipes', recipesRoutes);
 
 //=============================================================================
 // START SERVER

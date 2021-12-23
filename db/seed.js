@@ -149,14 +149,14 @@ const drinkData =[
         },
 ]
 
-Drinks.insertMany(manyFood, (error, food) => {
-	if (error) {
-		console.log(error);
-	} else {
-		console.log(food);
-	}
-	db.close();
-});
+// Drinks.insertMany(manyFood, (error, food) => {
+// 	if (error) {
+// 		console.log(error);
+// 	} else {
+// 		console.log(food);
+// 	}
+// 	db.close();
+// });
 
 // Recipe.deleteMany({})
 //   .then(() => Recipe.insertMany(RecipeData))

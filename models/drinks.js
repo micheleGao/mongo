@@ -21,7 +21,7 @@ const drinkSchema = new mongoose.Schema(
 // An instance of a model is called a document.
 // Models are responsible for creating and reading documents from the underlying MongoDB Database
 // from here: https://mongoosejs.com/docs/models.html
-const drink = mongoose.model('Food', drinkSchema);
+const drink = mongoose.model('Drinks', drinkSchema);
 
 //make this exportable to be accessed in `app.js`
 module.exports = drink;
